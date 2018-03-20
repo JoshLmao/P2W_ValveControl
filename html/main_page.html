@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!--P2W custom css-->
     <link rel="stylesheet" href="../css/cssbase.css"/>
     <!--Bootstrap & JQuery-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -14,25 +15,34 @@
   </head>
   <body>
     <div class="container-fluid">
-      <div class="row">
-        <!--Sidebar-->
-        <div class="col-lg-2">
-          <!--Image-->
-          <a href="../html/main_page.html">
-            <div class="topphoto"></div>
-          </a>
-          <!--Menu-->
-          <ul class="nav nav-pills nav-stacked">
-            <li role="presentation" class="active"><a href="../html/main_page.html">Dashboard</a></li>
-            <li role="presentation"><a href="../html/valve_overview.html">Valve Overview</a></li>
-            <li role="presentation"><a href="../html/valve_statistics.html">Valve Statistics</a></li>
-            <li role="presentation"><a href="../html/testing.html">Testing</a></li>
-            <li role="presentation"><a href="../html/output_log.html">Output Log</a></li>
-            <li role="presentation"><a href="../html/user_page.html">Profile</a></li>
-          </ul>
-        </div>
-        <div class="col-lg-10" style="background-color:yellow;">
-          Main Content
+      <!--Sidebar-->
+      <div class="sidebar-fixed">
+        <!--App Image-->
+        <a href="../html/main_page.html">
+          <img class="appImageIcon"/>
+        </a>
+        <!--Menu-->
+        <ul class="nav
+                  nav-pills
+                  nav-stacked">
+          <li role="presentation" class="active"><a href="../html/main_page.html">Dashboard</a></li>
+          <li role="presentation"><a href="../html/valve_overview.html">Valve Overview</a></li>
+          <li role="presentation"><a href="../html/valve_statistics.html">Valve Statistics</a></li>
+          <li role="presentation"><a href="../html/testing.html">Testing</a></li>
+          <li role="presentation"><a href="../html/output_log.html">Output Log</a></li>
+          <li role="presentation"><a href="../html/user_page.html">Profile</a></li>
+        </ul>
+      </div>
+      
+      <!--Main content-->
+      <div class="main-content">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-lg-6">Col 1</div>
+          </div>
+          <div class="row">
+            <div class="col-lg-6">Col 2</div>
+          </div>
         </div>
       </div>
     </div>
