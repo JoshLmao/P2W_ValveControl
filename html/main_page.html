@@ -1,32 +1,37 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
   <head>
-    <link rel="stylesheet" href="../css/cssbase.css"/>
-    <Title>Dashboard</Title>
+    <title>Dashboard</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   </head>
   <body>
-    <!--App Icon-->
-    <a href="../html/main_page.html">
-      <div class="topphoto">
-
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col">
+          <ul class="nav nav-pills nav-stacked">
+            <li role="presentation" class="active"><a href="#">Dashboard</a></li>
+            <li role="presentation"><a href="#">Valve Overview</a></li>
+            <li role="presentation"><a href="#">Valve Statistics</a></li>
+            <li role="presentation"><a href="#">Testing</a></li>
+            <li role="presentation"><a href="#">Output Log</a></li>
+            <li role="presentation"><a href="#">Profile</a></li>
+          </ul>
+        </div>
+        <div class="col">
+          Main Content
+        </div>
       </div>
-    </a>
-    <!--Sidebar with navigation links-->
-    <div class="sidebar">
-      <a href="../html/main_page.html">Dashboard</a>
-      </br>
-      <a href="../html/valve_overview.html">Valve Overview</a>
-      </br>
-      <a href="../html/valve_statistics.html">Valve Statistics</a>
-      </br>
-      <a href="../html/testing.html">Tests</a>
-      </br>
-		  <a href="../html/output_log.html">Output Log</a>
-      </br>
-      <a href="../html/user_page.html">User</a>
-      </br>
     </div>
-    <!--Main Content-->
 
-    <!--End Main Content-->
+    <!--Needed bootstrap Javascript-->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
   </body>
 </html>
