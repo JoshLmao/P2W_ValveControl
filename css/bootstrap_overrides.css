@@ -1,0 +1,16 @@
+/*Selected Pill style*/
+.nav-pills>li.active>a,
+.nav-pills>li.active>a:focus,
+ .nav-pills>li.active>a:hover {
+    background-color: var(--primary_accent_color);
+}
+/*Unselected pill style*/
+.nav>li>a:hover,
+.nav>li>a:focus {
+   background-color: var(--secondary_accent_color);
+   color: var(--dark_text_color);
+}
+/*Enabled pill style*/
+.nav>li>a:enabled{
+  color: var(--text_color);
+}

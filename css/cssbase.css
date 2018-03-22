@@ -1,5 +1,6 @@
 :root{
   --text_color: #FFFFFF;
+  --dark_text_color: #000000;
   --primary_accent_color: #F14338;
   --secondary_accent_color: #F1EE38;
   --primary_background_color: #38AEF1;
@@ -30,10 +31,16 @@ html,body {
 
 /*Sidebar app icon*/
 .appImageIcon{
-	height: 20%;
+	height: 200px;
 	width: 100%;
 	position: relative;
   z-index: 1;
   padding-top: 20px;
+  padding-bottom: 20px;
   content: url("../resources/images/p2w_icon.jpg");
+}
+
+btn.primary{
+  background: #0099cc;
+  color: #ffffff;
 }
