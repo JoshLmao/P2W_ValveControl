@@ -1,14 +1,15 @@
 :root{
   --text_color: #FFFFFF;
   --dark_text_color: #000000;
-  --primary_accent_color: #F14338;
-  --secondary_accent_color: #F1EE38;
-  --primary_background_color: #38AEF1;
-  --secondary_background_color: #7EF138;
+  --primary_accent_color: #333334;
+  --secondary_accent_color: #2d2d30;
+  --primary_background_color: #252526;
+  --secondary_background_color: #28282b;
 }
 
 html,body {
-  height:100vh;
+  height: 100vh;
+  background-color: var(--secondary_background_color);
 }
 
 /*Sidebar positioning*/
