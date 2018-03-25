@@ -10,6 +10,7 @@
 html,body {
   height: 100vh;
   background-color: var(--secondary_background_color);
+  color: var(--text_color);
 }
 
 /*Sidebar positioning*/
@@ -32,13 +33,17 @@ html,body {
 
 /*Sidebar app icon*/
 .appImageIcon{
-	height: 200px;
+	height: 180px;
 	width: 100%;
 	position: relative;
   z-index: 1;
   padding-top: 20px;
   padding-bottom: 20px;
-  content: url("../resources/images/p2w_icon.jpg");
+  padding-left: 10px;
+  padding-right: 10px;
+  content: url("../resources/images/dota_plus.png");
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 btn.primary{
