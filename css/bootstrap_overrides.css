@@ -14,3 +14,7 @@
 .nav>li>a:enabled{
   color: var(--text_color);
 }
+.panel{
+  background: var(--secondary_accent_color);
+  border: var(--secondary_accent_color);
+}
