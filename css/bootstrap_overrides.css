@@ -18,3 +18,14 @@
   background: var(--secondary_accent_color);
   border: var(--secondary_accent_color);
 }
+
+.navbar-default {
+  background: var(--secondary_accent_color);
+  border-color: var(--secondary_accent_color);
+  color: var(--text_color);
+}
+
+.table>tbody>tr.success>td {
+  color: var(--text_color);
+  background: yellow;
+}

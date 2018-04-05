@@ -5,6 +5,12 @@
   --secondary_accent_color: #2d2d30;
   --primary_background_color: #252526;
   --secondary_background_color: #28282b;
+
+  --info_log_color: #FF000000;
+  --error_log_color: #ACB035;
+  --warning_log_color: #C6A14B;
+  --fatal_log_color: #C64B4B;
+  --exception_log_color: #921F1F;
 }
 
 html,body {

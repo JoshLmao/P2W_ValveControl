@@ -1,0 +1,15 @@
+.info_log {
+  background: var(--info_log_color);
+}
+.error_log {
+  background: var(--error_log_color);
+}
+.warning_log {
+  background: var(--warning_log_color);
+}
+.fatal_log {
+  background: var(--fatal_log_color);
+}
+.exception_log {
+  background: var(--exception_log_color);
+}

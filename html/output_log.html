@@ -14,6 +14,7 @@
     <!--Bootstrap & JQuery-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../css/output_log/log.css"/>
   </head>
   <body>
     <div class="container-fluid">
@@ -39,7 +40,124 @@
       <!--Main content-->
       <div class="main-content">
         <div class="container-fluid">
-          <!--Code here-->
+          <!--Panel Title-->
+          <div class="row">
+            <div class="page-header">
+              <h1>Output Log <small>All logging outputs made by the program</small></h1>
+            </div>
+          </div>
+          <!--Log filters-->
+          <div class="row">
+            <nav class="navbar navbar-default">
+              <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                  </button>
+                  <a class="navbar-brand" href="#">Filters</a>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                  <form class="navbar-form navbar-left">
+                    <a href="#" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Infos</a>
+                    <a href="#" class="btn btn-primary btn-lg" role="button" aria-pressed="true">Error        <span class="badge">60</span></a>
+                    <a href="#" class="btn btn-primary btn-lg" role="button" aria-pressed="true">Warnings     <span class="badge">35</span></a>
+                    <a href="#" class="btn btn-primary btn-lg" role="button" aria-pressed="true">Fatals       <span class="badge">16</span></a>
+                    <a href="#" class="btn btn-primary btn-lg" role="button" aria-pressed="true">Exceptions</a>
+                    <div class="form-group">
+                      <input type="text" class="form-control" placeholder="Filter by phrase...">
+                    </div>
+                    <button type="submit" class="btn btn-default">Filter</button>
+                  </form>
+                </div>
+              </div>
+            </nav>
+          </div>
+          <!--Current logs-->
+          <div class="row">
+            <div class="panel panel-default" style="margin-top:10px">
+              <div class="panel-body">
+                <div class="pre-scrollable">
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <th>Log Type</th>
+                        <th>Message</th>
+                        <th>Date & Time (hh:mm:ss dd/mm/yy)</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr class="info_log">
+                        <td>Info</td>
+                        <td>Started up</td>
+                        <td>19:00:00 01/03/2017</td>
+                      </tr>
+                      <tr class="error_log">
+                        <td>Error</td>
+                        <td>Unable to start monitoring process</td>
+                        <td>19:00:00 01/03/2017</td>
+                      </tr>
+                      <tr class="info_log">
+                        <td>Info</td>
+                        <td>Started up</td>
+                        <td>19:00:00 01/03/2017</td>
+                      </tr>
+                      <tr class="info_log">
+                        <td>Info</td>
+                        <td>Started up</td>
+                        <td>19:00:00 01/03/2017</td>
+                      </tr>
+                      <tr class="info_log">
+                        <td>Info</td>
+                        <td>Started up</td>
+                        <td>19:00:00 01/03/2017</td>
+                      </tr>
+                      <tr class="warning_log">
+                        <td>Warning</td>
+                        <td>Pumps aren't connected</td>
+                        <td>19:00:00 01/03/2017</td>
+                      </tr>
+                      <tr class="fatal_log">
+                        <td>Fatal</td>
+                        <td>PSI pressure failing...</td>
+                        <td>19:00:00 01/03/2017</td>
+                      </tr>
+                      <tr class="info_log">
+                        <td>Info</td>
+                        <td>Started up</td>
+                        <td>19:00:00 01/03/2017</td>
+                      </tr>
+                      <tr class="info_log">
+                        <td>Info</td>
+                        <td>Started up</td>
+                        <td>19:00:00 01/03/2017</td>
+                      </tr>
+                      <tr class="exception_log">
+                        <td>Exception</td>
+                        <td>NullReferenceException</td>
+                        <td>19:00:00 01/03/2017</td>
+                      </tr>
+                      <tr class="info_log">
+                        <td>Info</td>
+                        <td>Started up</td>
+                        <td>19:00:00 01/03/2017</td>
+                      </tr>
+                      <tr class="info_log">
+                        <td>Info</td>
+                        <td>Started up</td>
+                        <td>19:00:00 01/03/2017</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
