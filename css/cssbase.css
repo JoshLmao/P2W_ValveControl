@@ -56,33 +56,4 @@ btn.primary{
   background: #0099cc;
   color: #ffffff;
 }
-.text
-{
-	font-weight:normal;
-	font-variant:small-caps;
-	color:#ffffff;
-	letter-spacing:0pt;
-	word-spacing:1pt;
-	font-size:21px;
-	text-align:left;
-	font-family:georgia, serif;
-	line-height:1;
-	text-shadow: 2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
-}
-.title
-{
-	font-weight:normal;
-	font-variant:small-caps;
-	color:#1437A8;
-	letter-spacing:0pt;
-	word-spacing:1pt;
-	font-size:30px;
-	text-align:left;
-	font-family:georgia, serif;
-	line-height:1;
-}
-ul
-{
-	list-style-type: none;
-	padding-top:20px;
-}
+
