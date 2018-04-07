@@ -29,3 +29,8 @@
   color: var(--text_color);
   background: yellow;
 }
+
+.list-group-item {
+  background: var(--secondary_accent_color);
+  border-color: var(--primary_accent_color);
+}

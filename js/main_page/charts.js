@@ -34,6 +34,7 @@ function drawUptimeChart(chartName) {
     backgroundColor: "#262626",
     titleTextStyle: { color: '#FFF' },
     legendTextStyle: { color: '#FFF' },
+    height:350,
     //Properties
     title: 'Total Uptime',
     hAxis:
@@ -80,6 +81,7 @@ function drawFlowRateChart(chartName) {
     backgroundColor: "#262626",
     titleTextStyle: { color: '#FFF' },
     legendTextStyle: { color: '#FFF' },
+    height:350,
     //Properties
     title: 'Flow Rate Over Time',
     hAxis:
