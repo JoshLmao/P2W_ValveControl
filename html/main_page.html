@@ -14,8 +14,7 @@
     <!--Bootstrap & JQuery-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <!--Font-->
-    <link href="../fonts/aqua.ttf" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="../css/dashboard/dashboard.css"/>
   </head>
   <body>
     <div class="container-fluid">
@@ -42,24 +41,26 @@
       <div class="main-content">
         <div class="container-fluid">
           <!--Title Bar & Profile-->
-          <div class="row">
+          <div class="row" style="max-height:33vh;">
             <div class="col-lg-10">
               <div class="page-header">
                 <h1>P2W Valve Control Dashboard</h1>
               </div>
             </div>
             <div class="col-lg-2">
-              <div class="panel panel-default" style="margin-top:10px">
-                <div class="panel-body">
-                  <div class="col-lg-2">
-                    <span class="glyphicon glyphicon-user" style="font-size: 30px;align-items: center;"></span>
-                  </div>
-                  <div class="col-lg-10 text-center">
-                    <!--Current user & profile level-->
-                    <p style="vertical-align: center;">Ben Dover (Operations)</p>
+              <a href="user_page.html">
+                <div class="panel panel-default" style="margin-top:10px">
+                  <div class="panel-body">
+                    <div class="col-lg-2">
+                      <span class="glyphicon glyphicon-user" style="font-size: 30px;align-items: center;"></span>
+                    </div>
+                    <div class="col-lg-10 text-center">
+                      <!--Current user & profile level-->
+                      <p style="vertical-align: center;">Ben Dover (Operations)</p>
+                    </div>
                   </div>
                 </div>
-              </div>
+              </a>
             </div>
           </div>
 
@@ -68,20 +69,93 @@
             <div class="panel panel-default">
               <div class="panel-body">
                 <h2 style="margin-top:5px;padding-left:5px;padding-bottom:10px;padding-right:5px;">Quick Valve Control</h2>
-                <div class="col-sm-4 text-center">
-                  <button type="button" class="btn btn-default" aria-label="Left Align">
-                    <span class="glyphicon glyphicon-fast-backward" aria-hidden="true" style="font-size: 70px;"></span>
-                  </button>
+                <div class="col-lg-6">
+                  <!--Valves statuses-->
+                  <ul class="list-group list-group-flush" style="padding: 0px;">
+                    <li class="list-group-item" style="height:50px">
+                      <div class="col-lg-1">
+                        <span class="dot-active"></span>
+                      </div>
+                      <div class="col-lg-10">
+                        Valve 1
+                      </div>
+                      <div class="col-lg-1">
+                        <button type="button" class="btn btn-default" aria-label="Left Align">
+                          <span class="glyphicon glyphicon-off" aria-hidden="true" style="color:var(--active_status_color);"></span>
+                        </button>
+                      </div>
+                    </li>
+                    <li class="list-group-item" style="height:50px">
+                      <div class="col-lg-1">
+                        <span class="dot-error"></span>
+                      </div>
+                      <div class="col-lg-10">
+                        Valve 2
+                      </div>
+                      <div class="col-lg-1">
+                        <button type="button" class="btn btn-default" aria-label="Left Align">
+                          <span class="glyphicon glyphicon-off" aria-hidden="true" style="color:var(--error_status_color);"></span>
+                        </button>
+                      </div>
+                    </li>
+                    <li class="list-group-item" style="height:50px">
+                      <div class="col-lg-1">
+                        <span class="dot-active"></span>
+                      </div>
+                      <div class="col-lg-10">
+                        Valve 3
+                      </div>
+                      <div class="col-lg-1">
+                        <button type="button" class="btn btn-default" aria-label="Left Align">
+                          <span class="glyphicon glyphicon-off" aria-hidden="true" style="color:var(--active_status_color);"></span>
+                        </button>
+                      </div>
+                    </li>
+                    <li class="list-group-item" style="height:50px">
+                      <div class="col-lg-1">
+                        <span class="dot-offline"></span>
+                      </div>
+                      <div class="col-lg-10">
+                        Valve 4
+                      </div>
+                      <div class="col-lg-1">
+                        <button type="button" class="btn btn-default" aria-label="Left Align">
+                          <span class="glyphicon glyphicon-off" aria-hidden="true"></span>
+                        </button>
+                      </div>
+                    </li>
+                    <li class="list-group-item" style="height:50px">
+                      <div class="col-lg-1">
+                        <span class="dot-active"></span>
+                      </div>
+                      <div class="col-lg-10">
+                        Valve 5
+                      </div>
+                      <div class="col-lg-1">
+                        <button type="button" class="btn btn-default" aria-label="Left Align">
+                          <span class="glyphicon glyphicon-off" aria-hidden="true" style="color:var(--active_status_color);"></span>
+                        </button>
+                      </div>
+                    </li>
+                  </ul>
                 </div>
-                <div class="col-sm-4 text-center">
-                  <button type="button" class="btn btn-default" aria-label="Left Align">
-                    <span class="glyphicon glyphicon-stop" aria-hidden="true" style="font-size: 70px;"></span>
-                  </button>
-                </div>
-                <div class="col-sm-4 text-center">
-                  <button type="button" class="btn btn-default" aria-label="Left Align">
-                    <span class="glyphicon glyphicon-fast-forward" aria-hidden="true" style="font-size: 70px;"></span>
-                  </button>
+                <!--Valve controls-->
+                <div class="col-lg-6">
+                  <div class="col-sm-4 text-center">
+                    <button type="button" class="btn btn-default" aria-label="Left Align">
+                      <span class="glyphicon glyphicon-off" aria-hidden="true" style="font-size: 70px; color:var(--active_status_color);"></span>
+                    </button>
+                  </div>
+                  <div class="col-sm-4 text-center">
+                    <button type="button" class="btn btn-default" aria-label="Left Align">
+                      <span class="glyphicon glyphicon-off" aria-hidden="true" style="font-size: 70px; color:var(--error_status_color);"></span>
+                    </button>
+                  </div>
+                  <div class="col-sm-4 text-center">
+                    <button type="button" class="btn btn-default" aria-label="Left Align">
+                      <span class="glyphicon glyphicon-fast-forward" aria-hidden="true" style="font-size: 70px;"></span>
+                    </button>
+                  </div>
                 </div>
               </div>
             </div>

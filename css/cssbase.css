@@ -11,6 +11,10 @@
   --warning_log_color: #C6A14B;
   --fatal_log_color: #C64B4B;
   --exception_log_color: #921F1F;
+
+  --active_status_color: rgb(0, 255, 0);
+  --error_status_color: rgb(255, 0, 0);
+  --offline_status_color: rgb(40, 40, 40);
 }
 
 html,body {
