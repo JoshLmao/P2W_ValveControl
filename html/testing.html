@@ -39,32 +39,39 @@
       <!--Main content-->
       <div class="main-content">
         <div class="container-fluid">
-          <!--Code here-->
-			      <!--First Section-->
+			      <!--Buttons & Valve Camera-->
 				  <div class="row" style="padding-top:5px;">
 			         <div class="panel panel-default">
 				        <div class="panel-body">
 			                <img src="../resources/images/test2.jpg" align="right" width="285" height="285">
-							<h2 style="margin-top:5px;padding-left:5px;padding-bottom:10px;padding-right:5px;">Testing</h2>
+							<h2 style="margin-top:5px;padding-left:5px;padding-bottom:10px;padding-right:5px;text-decoration: underline;">Testing</h2>
                             <button type="button" class="btn btn-default" style="text-align: center;float: center;width: 260px;background-color:green;color:white;border:black;display: block;">
 			                        <h4>OPEN</h4>
 			                </button>
+							</br>
 							<button type="button" class="btn btn-default" style="text-align: center;float: center;width: 260px;background-color:yellow;color:white;border:black;display: block;">
 			                        <h4>CLOSE</h4>
 			                </button>
+							</br>
 							<button type="button" class="btn btn-default" style="text-align: center;float: center;width: 260px;background-color:red;color:white;border:black;display: block;">
 			                        <h4>EMERGENCY</h4>
-			                </button>
+			                </button>		
 				        </div>
-											  <img src="../resources/images/divider.png" align="left" width="1120" height="20">
+						<hr>
 			          </div>
 			      </div>
-				  <!--Second Section-->
+				  <!--Test Statistics-->
 				  <div class="row" style="padding-top:5px;">
 			        <div class="panel panel-default">
 				      <div class="panel-body">
-					       <img src="../resources/images/redacted.jpg" align="left" width="1090" height="250">
-				      </div>
+					       <div class="col-lg-6">
+                           <!--Uptime chart-->
+                                 <div id="uptimeChart"></div>
+                           </div>
+                           <div class="col-lg-6">
+                           <!--Flow Rate chart-->
+                                 <div id="flowRateChart"></div>
+				           </div>
 			        </div>
 			     </div>
 		     </div>
@@ -77,5 +84,8 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	<!--Google Charts-->
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript" src="../js/testing_page/charts.js"></script>
   </body>
 </html>
