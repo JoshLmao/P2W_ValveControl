@@ -68,7 +68,7 @@
                     <span class="dot-error"></span>
                   </div>
                   <div class="col-lg-10">
-                    Valve 1
+                    Valve 2
                   </div>
                   <div class="col-lg-1">
                     <button type="button" class="btn btn-default" aria-label="Left Align">
@@ -81,7 +81,7 @@
                     <span class="dot-active"></span>
                   </div>
                   <div class="col-lg-10">
-                    Valve 1
+                    Valve 3
                   </div>
                   <div class="col-lg-1">
                     <button type="button" class="btn btn-default" aria-label="Left Align">
@@ -94,7 +94,33 @@
                     <span class="dot-active"></span>
                   </div>
                   <div class="col-lg-10">
-                    Valve 1
+                    Valve 4
+                  </div>
+                  <div class="col-lg-1">
+                    <button type="button" class="btn btn-default" aria-label="Left Align">
+                      <span class="glyphicon glyphicon-off" aria-hidden="true" style="color:var(--active_status_color);"></span>
+                    </button>
+                  </div>
+                </li>
+                <li class="list-group-item" style="height:50px">
+                  <div class="col-lg-1">
+                    <span class="dot-offline"></span>
+                  </div>
+                  <div class="col-lg-10">
+                    Valve 5
+                  </div>
+                  <div class="col-lg-1">
+                    <button type="button" class="btn btn-default" aria-label="Left Align">
+                      <span class="glyphicon glyphicon-off" aria-hidden="true" style="color:var(--offline_status_color);"></span>
+                    </button>
+                  </div>
+                </li>
+                <li class="list-group-item" style="height:50px">
+                  <div class="col-lg-1">
+                    <span class="dot-active"></span>
+                  </div>
+                  <div class="col-lg-10">
+                    Valve 6
                   </div>
                   <div class="col-lg-1">
                     <button type="button" class="btn btn-default" aria-label="Left Align">
@@ -107,7 +133,7 @@
                     <span class="dot-active"></span>
                   </div>
                   <div class="col-lg-10">
-                    Valve 1
+                    Valve 7
                   </div>
                   <div class="col-lg-1">
                     <button type="button" class="btn btn-default" aria-label="Left Align">
@@ -117,55 +143,41 @@
                 </li>
                 <li class="list-group-item" style="height:50px">
                   <div class="col-lg-1">
-                    <span class="dot-active"></span>
+                    <span class="dot-offline"></span>
                   </div>
                   <div class="col-lg-10">
-                    Valve 1
+                    Valve 8
                   </div>
                   <div class="col-lg-1">
                     <button type="button" class="btn btn-default" aria-label="Left Align">
-                      <span class="glyphicon glyphicon-off" aria-hidden="true" style="color:var(--active_status_color);"></span>
+                      <span class="glyphicon glyphicon-off" aria-hidden="true" style="color:var(--offline_status_color);"></span>
                     </button>
                   </div>
                 </li>
                 <li class="list-group-item" style="height:50px">
                   <div class="col-lg-1">
-                    <span class="dot-active"></span>
+                    <span class="dot-error"></span>
                   </div>
                   <div class="col-lg-10">
-                    Valve 1
+                    Valve 9
                   </div>
                   <div class="col-lg-1">
                     <button type="button" class="btn btn-default" aria-label="Left Align">
-                      <span class="glyphicon glyphicon-off" aria-hidden="true" style="color:var(--active_status_color);"></span>
+                      <span class="glyphicon glyphicon-off" aria-hidden="true" style="color:var(--error_status_color);"></span>
                     </button>
                   </div>
-                </li>
-                <li class="list-group-item" style="height:50px">
-                  <div class="col-lg-1">
-                    <span class="dot-active"></span>
-                  </div>
-                  <div class="col-lg-10">
-                    Valve 1
-                  </div>
-                  <div class="col-lg-1">
-                    <button type="button" class="btn btn-default" aria-label="Left Align">
-                      <span class="glyphicon glyphicon-off" aria-hidden="true" style="color:var(--active_status_color);"></span>
-                    </button>
-                  </div>
-                </li>
-                <li class="list-group-item" style="height:50px">
-                  <div class="col-lg-1">
-                    <span class="dot-active"></span>
-                  </div>
-                  <div class="col-lg-10">
-                    Valve 1
-                  </div>
-                  <div class="col-lg-1">
-                    <button type="button" class="btn btn-default" aria-label="Left Align">
-                      <span class="glyphicon glyphicon-off" aria-hidden="true" style="color:var(--active_status_color);"></span>
-                    </button>
-                  </div>
+                  <li class="list-group-item" style="height:50px">
+                    <div class="col-lg-1">
+                      <span class="dot-offline"></span>
+                    </div>
+                    <div class="col-lg-10">
+                      Valve 10
+                    </div>
+                    <div class="col-lg-1">
+                      <button type="button" class="btn btn-default" aria-label="Left Align">
+                        <span class="glyphicon glyphicon-off" aria-hidden="true" style="color:var(--offline_status_color);"></span>
+                      </button>
+                    </div>
                 </li>
               </ul>
             </div>
@@ -173,6 +185,68 @@
             <div class="col-lg-4">
               <!--Top-->
               <div class="row">
+                <div class="panel panel-default" style="margin-top:10px">
+                  <div class="panel-body">
+                    <div class="pre-scrollable" style="max-height:70vh;">
+                      <table class="table">
+                        <thead>
+                          <tr>
+                            <th>valve</th>
+                            <th>Location</th>
+                            <th>Last time changed (hh:mm:ss dd/mm/yy)</th>
+                          </th>
+                        </thead>
+                        <tbody>
+                          <tr class="Example_1">
+                          <td>Valve 1</td>
+                          <td></td>
+                          <td></td>
+                        </tr>
+                          <tr class="Example_2">
+                          <td>Valve 2</td>
+                          <td></td>
+                          <td></td>
+                          </tr>
+                          <tr class="Example_3">
+                          <td>Valve 3</td>
+                          <td></td>
+                          <td></td>
+                        </tr>
+                          <tr class="Example_4">
+                          <td>Valve 4</td>
+                          <td></td>
+                          <td></td>
+                          </tr>
+                          <tr class="Example_5">
+                          <td>Valve 5</td>
+                          <td></td>
+                          <td></td>
+                        </tr>
+                          <tr class="Example_6">
+                          <td>Valve 6</td>
+                          <td></td>
+                          <td></td>
+                        </tr>
+                          <tr class="Example_7">
+                          <td>Valve 7</td>
+                          <td></td>
+                          <td></td>
+                        </tr>
+                          <tr class="Example_8">
+                          <td>Valve 8</td>
+                          <td></td>
+                          <td></td>
+                        </tr>
+                          <tr class="Example_9">
+                          <td>Valve 9</td>
+                          <td></td>
+                          <td></td>
+                        </tr>
+                          <tr class="Example_20">
+                          <td>Valve 10</td>
+                          <td></td>
+                          <td></td>
+                        </tr>
 
               </div>
               <!--Bottom-->
