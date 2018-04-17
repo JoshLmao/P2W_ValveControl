@@ -178,23 +178,23 @@
                         <span class="glyphicon glyphicon-off" aria-hidden="true" style="color:var(--offline_status_color);"></span>
                       </button>
                     </div>
+                  </li>
                 </li>
               </ul>
             </div>
+            <!--Column 2-->
             <div class="col-lg-4">
-              <!--Top-->
               <div class="row">
                 <div class="panel panel-default" style="margin-top:10px">
                   <div class="panel-body">
                     <div class="pre-scrollable" style="max-height:70vh;">
                       <table class="table">
-                        <thead>
+                        <thread>
                           <tr>
                             <th>valve</th>
                             <th>Location</th>
                             <th>Last time changed (hh:mm:ss dd/mm/yy)</th>
-                          </th>
-                        </thead>
+                          </tr>
                         <tbody>
                           <tr class="Example_1">
                           <td>Valve 1</td>
@@ -246,30 +246,32 @@
                           <td>Manchester</td>
                           <td>18:00:00 05/04/2018</td>
                         </tr>
-
-              </div>
-            <!--Column 2-->
-            </div>
-              <!--Bottom-->
-
-                <!--Column 3-->
-                <div class="col-lg-4">
-                  <div class="row">
-                    <div id="map" style="width:25%;height:250px"></div>
-                  <script>
-                  function myMap() {
-                    var mapCanvas = document.getElementById("map");
-                    var mapOptions = {
-                      center: new google.maps.LatLng(51.5, -0.2), zoom: 10
-                    };
-                    var map = new google.maps.Map(mapCanvas, mapOptions);
-                  }
-                    </script>
+                      </tbody>
+                    </thread>
+                  </table>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
+          <!--Column 3-->
+          <div class="col-lg-4">
+            <div class="col-lg-4">
+              <div class="row">
+                <div id="map" style="width:25%;height:250px"></div>
+                <script>
+                function myMap() {
+                  var mapCanvas = document.getElementById("map");
+                  var mapOptions = {
+                    center: new google.maps.LatLng(51.5, -0.2), zoom: 10
+                  };
+                  var map = new google.maps.Map(mapCanvas, mapOptions);
+                }
+                  </script>
+                </div>
+              </div>
+          </div>
         </div>
-
     <!--Needed bootstrap Javascript-->
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
