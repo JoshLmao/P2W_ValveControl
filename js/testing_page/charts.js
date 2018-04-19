@@ -3,30 +3,30 @@ google.charts.load('current', {'packages':['corechart']});
 google.charts.setOnLoadCallback(drawCharts);
 
 function drawCharts(){
-  drawUptimeChart('uptimeChart');
+  drawPressureChart('pressureChart');
   drawFlowRateChart('flowRateChart');
 }
 
 // Draw the chart and set the chart values
-function drawUptimeChart(chartName) {
+function drawPressureChart(chartName) {
   var data = google.visualization.arrayToDataTable([
-    ['Time (hours)', 'Up'],
+    ['Time (hours)', 'Pres sure (Pa/m)'],
     ['1',  0 ],
     ['2',  0 ],
-    ['3',  0 ],
-    ['4',  1 ],
-    ['5',  1 ],
-    ['6',  1 ],
-    ['7',  1 ],
-    ['8',  1 ],
-    ['9',  1 ],
-    ['10',  0 ],
-    ['11',  1 ],
-    ['12',  1 ],
-    ['13',  1 ],
+    ['3',  10 ],
+    ['4',  10 ],
+    ['5',  20 ],
+    ['6',  20 ],
+    ['7',  20 ],
+    ['8',  20 ],
+    ['9',  30 ],
+    ['10',  40 ],
+    ['11',  20 ],
+    ['12',  10 ],
+    ['13',  10 ],
     ['14',  0 ],
-    ['15',  1 ],
-    ['16',  1 ],
+    ['15',  0 ],
+    ['16',  10 ],
   ]);
 
   var options = {
@@ -36,7 +36,7 @@ function drawUptimeChart(chartName) {
     legendTextStyle: { color: '#FFF' },
     height:350,
     //Properties
-    title: 'Total Test Uptime',
+    title: 'Pressure Over Time',
     hAxis:
     {
       title: 'Time (m)',
