@@ -35,7 +35,7 @@ function drawLineChart(data, chartName, chartTitle, chartHorizontalAxisTitle = '
     backgroundColor: "#262626",
     titleTextStyle: { color: '#FFF' },
     legendTextStyle: { color: '#FFF' },
-    height: 150,
+    height: 250,
     //width:  250,
     //Properties
     title: chartTitle,
